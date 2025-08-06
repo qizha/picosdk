@@ -19,14 +19,14 @@ from exceptions import (
 from ssh_manager import SSHManager
 
 
-class K8sSandboxSDK:
+class Sandbox:
     """
     SDK for managing Kubernetes sandboxes (Pods)
     """
     
     def __init__(self, namespace: str = "default"):
         """
-        Initialize the K8sSandboxSDK
+        Initialize the Sandbox
         
         Args:
             namespace: Kubernetes namespace to operate in

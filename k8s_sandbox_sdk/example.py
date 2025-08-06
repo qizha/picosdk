@@ -2,14 +2,14 @@
 Example usage of the Kubernetes Sandbox SDK
 """
 import time
-from sdk import K8sSandboxSDK
+from sandbox import Sandbox
 from exceptions import SandboxError
 
 
 def main():
     """Example usage of the SDK"""
     # Initialize the SDK
-    sdk = K8sSandboxSDK(namespace="default")
+    sdk = Sandbox(namespace="default")
     
     # Example SSH key (in practice, you would load these from secure storage)
     public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDexample your_email@example.com"
@@ -40,7 +40,7 @@ def main():
         sdk.add_sandbox_to_cache(
             sandbox_id=sandbox_id,
             ip_address="127.0.0.1",
-            port="22",
+            port="2222",
             created_at="2023-01-01T00:00:00"
         )
         print("Added test sandbox to cache")
