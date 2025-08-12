@@ -14,7 +14,7 @@ The SDK is organized into several modules:
 
 
 
-1\. \*\*Main SDK (`sdk.py`)\*\*: The primary `K8sSandboxSDK` class that implements all core functionality:
+1\. \*\*Main SDK (`sandbox.py`)\*\*: The primary `Sandbox` class that implements all core functionality:
 
 &nbsp;  - `create\_sandbox`: Creates a Kubernetes Pod with SSH configured
 
